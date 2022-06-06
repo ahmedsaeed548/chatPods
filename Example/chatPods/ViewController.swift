@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import chatPods
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let message = Message()
+        message.printMessage()
+        
+        let frameworkBundle = Bundle(for: Message.self)
+        let path = frameworkBundle.path(forResource: "Resources", ofType: "bundle")
+        let resourcesBundle = Bundle(url: URL(fileURLWithPath: path!))
+        let image = UIImage(named: "name.png", in: resourcesBundle, compatibleWith: nil)
+        print(image)
     }
 
     override func didReceiveMemoryWarning() {

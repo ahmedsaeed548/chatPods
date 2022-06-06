@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'chatPods'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of chatPods.'
+  s.summary          = 'A meaningful summary of my pods'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,10 +31,10 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'chatPods/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'chatPods' => ['chatPods/Assets/*.png']
-  # }
+  s.swift_version = '5.0'
+   s.resource_bundles = {
+     'Resources' => ['chatPods/Assets/name.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
