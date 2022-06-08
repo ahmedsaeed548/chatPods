@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the project, add source 'https://github.com/ahmedsaeed548/chatPodsDemo.git' in your podfile and then add pod 'NameOfYourPod'
 
 ## Requirements
 
